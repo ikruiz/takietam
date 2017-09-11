@@ -2,11 +2,11 @@
 <head>
 <title>kruiz</title>
 </head>
-<body style="background:#dcd6dc">
+<body style="background:#dcd6dc; font-size:20px;font-family:arial">
 <h1 style="text-align:center">kalkulator rabatów</h1>
 
 <p>
-<label>cena:</label>
+<label style="">cena:</label>
 <input type="number" id="cena" />
 </p>
 
@@ -17,7 +17,7 @@
 
 <p>
 <label>zaoszczędzone:</label>
-<input type="number" id="zaoszczedzone" /> 
+<input type="number" id="zaoszczedzone" />
 </p>
 
 <p>
@@ -30,11 +30,15 @@
 
 document.getElementById('zaoszczedzone').value =  ( (parseInt(document.getElementById('cena').value) * parseInt(document.getElementById('rabat').value))) / 100 ;
 
-document.getElementById('wynik').value = 
+document.getElementById('wynik').value =
 parseInt(document.getElementById('cena').value) - parseInt(document.getElementById('zaoszczedzone').value);
 
 
-" type="button" value="oblicz" />
+" type="button" value="oblicz" style="font-size:20px; background:#ff0080; border: 1px solid #99004f;padding: 5px 10px;" />
+</p>
+<p>
+<br/>
+<a href="index.html">Strona główna </a>
 </p>
 </body>
 </html>
