@@ -1,44 +1,51 @@
 <html>
 <head>
 <title>kruiz</title>
+ <link rel="stylesheet" href="style.css">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-<body style="background:#dcd6dc; font-size:20px;font-family:arial">
-<h1 style="text-align:center">kalkulator rabatów</h1>
-
+<body style="">
+<h1 >kalkulator rabatów</h1>
 <p>
-<label style="">cena:</label>
-<input type="number" id="cena" />
+  <img  src="obrazy/shopping.png" />
+</p>
+<p>
+    <img src="obrazy/sale2.png" id="sale" />
+</p>
+<p>
+  <label >cena:</label>
+  <input type="number" id="cena" />
 </p>
 
 <p>
-<label>rabat: </label>
-<input type="number" id="rabat" /> %
+  <label>rabat: </label>
+  <input type="number" id="rabat" /> %
 </p>
 
 <p>
-<label>zaoszczędzone:</label>
-<input type="number" id="zaoszczedzone" />
+  <label>zaoszczędzone:</label>
+  <input type="number" id="zaoszczedzone" />
 </p>
 
 <p>
-<label>cena po rabacie:</label>
-<input type="number" id="wynik" />
+  <label>cena po rabacie:</label>
+  <input type="number" id="wynik" />
 </p>
 
 <p>
-<input onclick="
+  <input onclick="
 
-document.getElementById('zaoszczedzone').value =  ( (parseInt(document.getElementById('cena').value) * parseInt(document.getElementById('rabat').value))) / 100 ;
+  document.getElementById('zaoszczedzone').value =  ( (parseInt(document.getElementById('cena').value) * parseInt(document.getElementById('rabat').value))) / 100 ;
 
-document.getElementById('wynik').value =
-parseInt(document.getElementById('cena').value) - parseInt(document.getElementById('zaoszczedzone').value);
+  document.getElementById('wynik').value =
+  parseInt(document.getElementById('cena').value) - parseInt(document.getElementById('zaoszczedzone').value);
 
 
-" type="button" value="oblicz" style="font-size:20px; background:#ff0080; border: 1px solid #99004f;padding: 5px 10px;" />
+  " type="button" value="oblicz" style="font-size:20px; background:#ff0080; border: 1px solid #99004f;padding: 5px 10px;" />
 </p>
 <p>
-<br/>
-<a href="index.html">Strona główna </a>
+  <br/>
+  <a href="index.html">Strona główna </a>
 </p>
 </body>
 </html>
